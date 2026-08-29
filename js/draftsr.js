@@ -40,12 +40,12 @@ const FACEBOOK_URL = "https://www.facebook.com/profile.php?id=61563801204011";
 const eventsData = [
   {
   title: "Orientation",           /* On Going*/ 
-  start: "2026-08-17T10:27",
-  end: "2026-08-30T11:00",
+  start: "2026-09-3T10:27",
+  end: "2026-09-1T11:00",
   description: "Campus-wide orientation for new students.",
   location: "Gymnasium",
   image: "orientation.jpg",
-  announced: false
+  announced: true
   },
   {
     title: "General Assembly & Orientation",
@@ -67,12 +67,12 @@ const eventsData = [
   },
   {
     title: "Foundation Week Celebration",    
-    start: "2026-08-10T13:00",
-    end:   "2026-08-11T18:00", /*  Example    */
+    start: "2026-08-29T13:00",
+    end:   "2026-08-30T18:00", /*  Example    */
     description: "A week-long celebration featuring sports, talent competitions, and academic exhibits across all departments.",
     location: "Campus-wide",
     image: "election.jpeg",
-    announced: false
+    announced: true
   },
   {
     title: "Intramurals Sportsfest",
