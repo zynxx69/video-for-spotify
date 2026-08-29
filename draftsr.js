@@ -44,7 +44,7 @@ const eventsData = [
   end: "2026-08-30T11:00",
   description: "Campus-wide orientation for new students.",
   location: "Gymnasium",
-  image: "Orientation.jpg",
+  image: "orientation.jpg",
   announced: false
   },
   {
@@ -53,7 +53,7 @@ const eventsData = [
     end:   "2026-08-21T12:30",
     description: "Campus-wide orientation on Student Republic programs, committees, and how to get involved this semester.",
     location: "ISAT-U Dumangas Campus Gymnasium",
-    image: "Orientation.jpg",
+    image: "orientation.jpg",
     announced: true
   },
   {
@@ -71,7 +71,7 @@ const eventsData = [
     end:   "2026-08-11T18:00", /*  Example    */
     description: "A week-long celebration featuring sports, talent competitions, and academic exhibits across all departments.",
     location: "Campus-wide",
-    image: "Election.jpeg",
+    image: "election.jpeg",
     announced: false
   },
   {
@@ -89,7 +89,7 @@ const eventsData = [
     end:   "2026-08-09T10:00",
     description: "Campus and coastal clean-up in partnership with the Environmental Committee. All students welcome.",
     location: "ISAT-U Dumangas Grounds",
-    image: "Clean up Drive.jpeg",
+    image: "clean up drive.jpeg",
     announced: true
   },
   {
@@ -98,7 +98,7 @@ const eventsData = [
     end:   "2026-08-16T16:00",
     description: "Annual election of the next set of Student Republic officers. Every enrolled student may vote.",
     location: "Designated polling areas per department",
-    image: "Election.jpeg",
+    image: "election.jpeg",
     announced: true
   }
 
@@ -117,34 +117,34 @@ const eventsData = [
   */
 ];
 const officersData = [
-  { name: "Jose B. Baltero III, Ed.D.",     role: "Chair, SR Board of advisers, ASCOS Coordinator",          photo: "Untitled10_20260806200512.jpg" },
-  { name: "Klarc Ceasar B. Corona",      role: "President",                photo: "[1] CORONA.jpg" },
-  { name: "Cherrie Mae C. Paguntalan",        role: "Vice President", photo: "[2] PAGUNTALAN.jpg" },
-  { name: "Louie C. de Asis		 ",         role: "Executive Secretary", photo: "[3] DE ASIS.jpg" },
-  { name: "Rhea Karel Dula-ogon Buhawi		",      role: "Recording Secretary",         photo: "[4] BUHAWI.jpg" },
-  { name: "Karen Jemina Grace D. Soliman 		",        role: "Senate President",                 photo: "[5] SOLIMAN.jpg" },
-  { name: "Nicole Shayne D. Bayona",       role: "Senate Pro Tempore",                   photo: "[6] BAYONA.jpg" },
-  { name: "Jessica D. Donaire",      role: "Senator, DOE",      photo: "[7] D. JESSICA.jpg" },
-  { name: "Jennelyn D. Donaire",     role: "Senator, DWM",          photo: "[8] D. JENNELYN.jpg" },
-  { name: "Keit Bryan D. Demavivas",     role: "Senator, DENR",          photo: "[9] DEMAVIVAS K_.jpg" },
-  { name: "Dwight Denver D. Depliyan",     role: "Senator, SGT, DOJ",          photo: "[10] DEPLIYAN.jpg" },
-  { name: "Jericho D. Defiño",     role: "Senator, DILG",          photo: "[11] DEFIÑO.jpg" },
-  { name: "John Paul B. Palma",     role: "Senator, DPIC",          photo: "[12] PALMA.jpg" },
-  { name: "Richsha Ella D. Deypalubos",     role: "Senator, DSCA",          photo: "[13] DEYPALUBOS.jpg" },
-  { name: "Ashley Jean P. Demafeliz",     role: "Senator, DPW",          photo: "[14] DEMAFELIZ.jpg" },
-  { name: "Neagen P. Fernandez",     role: "Senator, DEA",          photo: "[15] FERNANDEZ.jpg" },
-  { name: "Jorielle Faye P. Dujali",     role: "Senator, DOH",          photo: "[16] DUJALI.jpg" },
-  { name: "Jhun Rhey F. Gabucay",     role: "BSIT Governor",          photo: "[19] GABUCAY.jpg" },
-  { name: "Elizer E. Sayo",     role: "BTVTED Governor",          photo: "[20] SAYO.jpg" },
-  { name: "Shahara J. Cabahit",     role: "BSHM Governor",          photo: "[21] CABAHIT.jpg" },   
-  { name: "Vennace Jenn M. Demavivas",     role: "BSE Governor",          photo: "[17] DEMAVIVAS V.J..jpg" },       
-  { name: "Edna Faith D. Dequito",     role: "BINDTECH Governor",          photo: "[18] DEQUITO.jpg" },
+  { name: "Jose B. Baltero III, Ed.D.",     role: "Chair, SR Board of advisers, ASCOS Coordinator",          photo: "untitled10_20260806200512.jpg" },
+  { name: "Klarc Ceasar B. Corona",      role: "President",                photo: "corona.jpg" },
+  { name: "Cherrie Mae C. Paguntalan",        role: "Vice President", photo: "paguntalan.jpg" },
+  { name: "Louie C. de Asis		 ",         role: "Executive Secretary", photo: "de asis.jpg" },
+  { name: "Rhea Karel Dula-ogon Buhawi		",      role: "Recording Secretary",         photo: "buhawi.jpg" },
+  { name: "Karen Jemina Grace D. Soliman 		",        role: "Senate President",                 photo: "[5] soliman.jpg" },
+  { name: "Nicole Shayne D. Bayona",       role: "Senate Pro Tempore",                   photo: "[6] bayona.jpg" },
+  { name: "Jessica D. Donaire",      role: "Senator, DOE",      photo: "[7] d. jessica.jpg" },
+  { name: "Jennelyn D. Donaire",     role: "Senator, DWM",          photo: "[8] d. jennelyn.jpg" },
+  { name: "Keit Bryan D. Demavivas",     role: "Senator, DENR",          photo: "[9] demavivas k_.jpg" },
+  { name: "Dwight Denver D. Depliyan",     role: "Senator, SGT, DOJ",          photo: "[10] depliyan.jpg" },
+  { name: "Jericho D. Defiño",     role: "Senator, DILG",          photo: "[11] defiño.jpg" },
+  { name: "John Paul B. Palma",     role: "Senator, DPIC",          photo: "[12] palma.jpg" },
+  { name: "Richsha Ella D. Deypalubos",     role: "Senator, DSCA",          photo: "[13] deypalubos.jpg" },
+  { name: "Ashley Jean P. Demafeliz",     role: "Senator, DPW",          photo: "[14] demafeliz.jpg" },
+  { name: "Neagen P. Fernandez",     role: "Senator, DEA",          photo: "[15] fernandez.jpg" },
+  { name: "Jorielle Faye P. Dujali",     role: "Senator, DOH",          photo: "[16] dujali.jpg" },
+  { name: "Jhun Rhey F. Gabucay",     role: "BSIT Governor",          photo: "[19] gabucay.jpg" },
+  { name: "Elizer E. Sayo",     role: "BTVTED Governor",          photo: "[20] sayo.jpg" },
+  { name: "Shahara J. Cabahit",     role: "BSHM Governor",          photo: "[21] cabahit.jpg" },   
+  { name: "Vennace Jenn M. Demavivas",     role: "BSE Governor",          photo: "[17] demavivas v.j..jpg" },       
+  { name: "Edna Faith D. Dequito",     role: "BINDTECH Governor",          photo: "[18] dequito.jpg" },
   { name: "Jewel Mamon",     role: " 1st Year Batch Representative",          photo: "" },
   { name: "Queeni",     role: " 1st Year Batch Representative",          photo: "" },
-  { name: "Stacey Kaye T. Digdigan",     role: " 2nd Year Batch Representative",          photo: "[22] DIGDIGAN.jpg" },
-  { name: "Crystal Gayle A. Eldo",     role: " 2nd Year Batch Representative",          photo: "[23] ELDO.jpg" },
-  { name: "Eza R. Diosanta",     role: " 3rd Year Batch Representative",          photo: "[24] DIOSANTA.jpg" },
-  { name: "John Patrick G. Arbis",     role: " 3rd Year Batch Representative",          photo: "[25] ARBIS.jpg" },
-  { name: "Alijah A. Balibol",     role: " 4th Year Batch Representative",          photo: "[27] BALIBOL.jpg" },
-  { name: "John Axel C. Buyco",     role: " 4th Year Batch Representative",          photo: "[26] BUYCO.jpg" },
-]; 
+  { name: "Stacey Kaye T. Digdigan",     role: " 2nd Year Batch Representative",          photo: "[22] digdigan.jpg" },
+  { name: "Crystal Gayle A. Eldo",     role: " 2nd Year Batch Representative",          photo: "[23] eldo.jpg" },
+  { name: "Eza R. Diosanta",     role: " 3rd Year Batch Representative",          photo: "[24] diosanta.jpg" },
+  { name: "John Patrick G. Arbis",     role: " 3rd Year Batch Representative",          photo: "[25] arbis.jpg" },
+  { name: "Alijah A. Balibol",     role: " 4th Year Batch Representative",          photo: "[27] balibol.jpg" },
+  { name: "John Axel C. Buyco",     role: " 4th Year Batch Representative",          photo: "[26] buyco.jpg" },
+];
