@@ -117,7 +117,7 @@ const eventsData = [
   */
 ];
 const officersData = [
-  { name: "Jose B. Baltero III, Ed.D.",     role: "Chair, SR Board of advisers, ASCOS Coordinator",          photo: "untitled10_20260806200512.jpg" },
+  { name: "Jose B. Baltero III, Ed. D.",     role: "Chair, SR Board of advisers, ASCOS Coordinator",          photo: "untitled10_20260806200512.jpg" },
   { name: "Klarc Ceasar B. Corona",      role: "President",                photo: "corona.jpg" },
   { name: "Cherrie Mae C. Paguntalan",        role: "Vice President", photo: "paguntalan.jpg" },
   { name: "Louie C. de Asis		 ",         role: "Executive Secretary", photo: "de asis.jpg" },
