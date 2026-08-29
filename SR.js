@@ -208,51 +208,16 @@ document.addEventListener("DOMContentLoaded", () => {
   let viewDate = new Date(); // month currently shown
   viewDate.setDate(1);
 
-  function getRecurringWednesdayEvents() {
-    const entries = [];
-    const startLimit = new Date(2026, 0, 1, 0, 0, 0, 0);
-    const endLimit = new Date(2029, 11, 31, 23, 59, 59, 999);
-    const cursor = new Date(startLimit);
-
-    while (cursor <= endLimit) {
-      if (cursor.getDay() === 3) {
-        const startDate = new Date(cursor);
-        startDate.setHours(8, 0, 0, 0);
-
-        const endDate = new Date(cursor);
-        endDate.setHours(17, 0, 0, 0);
-
-        entries.push({
-          title: "Departmental Shirt Wednesday",
-          description: "Every student must wear their departmental shirt today.",
-          location: "Campus-wide",
-          startDate,
-          endDate,
-          recurring: true,
-          announced: true
-        });
-      }
-
-      cursor.setDate(cursor.getDate() + 1);
-    }
-
-    return entries;
-  }
-
-  const recurringWednesdayEvents = getRecurringWednesdayEvents();
-
-  function calendarEventsOnDate(d) {
-    const dayStart = new Date(d); dayStart.setHours(0,0,0,0);
-    const dayEnd = new Date(d); dayEnd.setHours(23,59,59,999);
-
-    return [
-      ...allEvents.filter(e => e.startDate <= dayEnd && e.endDate >= dayStart),
-      ...recurringWednesdayEvents.filter(e => e.startDate <= dayEnd && e.endDate >= dayStart)
-    ];
+  function eventsOnDate(d) {
+    return allEvents.filter(e => {
+      const dayStart = new Date(d); dayStart.setHours(0,0,0,0);
+      const dayEnd = new Date(d); dayEnd.setHours(23,59,59,999);
+      return e.startDate <= dayEnd && e.endDate >= dayStart;
+    });
   }
 
   function pastEventsOnDate(d) {
-    return calendarEventsOnDate(d).filter(e => getStatus(e) === "past");
+    return eventsOnDate(d).filter(e => getStatus(e) === "past");
   }
 
   function renderCalendar() {
@@ -269,7 +234,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     for (let day = 1; day <= daysInMonth; day++) {
       const d = new Date(year, month, day);
-      const has = calendarEventsOnDate(d).length > 0;
+      const has = eventsOnDate(d).length > 0;
       const hasPast = pastEventsOnDate(d).length > 0;
       const isToday = d.toDateString() === today.toDateString();
       const classes = ["cal-day"];
@@ -293,7 +258,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function showDayEvents(d) {
     dayTitle.textContent = d.toLocaleDateString("en-PH", { weekday: "long", month: "long", day: "numeric" });
-    const evs = calendarEventsOnDate(d);
+    const evs = eventsOnDate(d);
     dayEvents.innerHTML = evs.length
       ? evs.map(e => `
           <div class="day-event-item">
