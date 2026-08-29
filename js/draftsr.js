@@ -81,7 +81,7 @@ const eventsData = [
     description: "Department vs. department sports competition — basketball, volleyball, and more.",
     location: "ISAT-U Dumangas Open Field & Gymnasium",
     image: "",
-    announced: true
+    announced: false
   },
   {
     title: "Environmental Do-Day",    /* Past */
@@ -105,15 +105,6 @@ const eventsData = [
     title: "Student Day",
     start: "2026-09-15T08:00",
     end:   "2026-09-19T16:00",
-    description: "enjoy students hihi gwapo si paul",
-    location: "ISATU Dumangas Gymnasium",
-    image: "election.jpeg",
-    announced: true
-  },
-  {
-    title: "Student Day",
-    start: "2026-09-1T08:00",
-    end:   "2026-09-7T16:00",
     description: "enjoy students hihi gwapo si paul",
     location: "ISATU Dumangas Gymnasium",
     image: "election.jpeg",
